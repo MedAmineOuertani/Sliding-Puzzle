@@ -37,7 +37,7 @@ void run(){
                 int x= mnn.mainmenupressed();
                 if(x==0){
                 RenderWindow window(VideoMode(1240,640),"Play !",Style::Close);
-                window.setFramerateLimit(70);
+                window.setFramerateLimit(550);
                 menu2 menu_2(1100,320);
                 Sprite t;
                 Texture k;
@@ -85,7 +85,10 @@ void run(){
 
                     }
                     }
-
+                    if (m.check_win(window)){
+                        window.close();
+                        break;
+                    }
 
                     window.clear(Color::White);
                     window.draw(t);
@@ -93,6 +96,7 @@ void run(){
                     m.draw(window);
 
                     window.display();
+
                 }
 
                     }else if(x==1){

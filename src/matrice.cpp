@@ -116,6 +116,7 @@ void matrice::set_square(){
 
 
                 i++;
+                grid[h+1][j+1]=i;
         }
 
     }
@@ -123,8 +124,17 @@ void matrice::set_square(){
     T[15].body.setColor(Color(0,0,0,128));
     T[15].setposition(w,3,3);
 
+}
+bool matrice::check_win(Window& window){
+        bool a=true;
+        int i=1;
+        for (int j=0;j<k;j++)
+        for(int h=0;h<k;h++){
+            if (grid[j+1][h+1]!=i)
+                a=false;
+            i++;
+        }
+        return a;
 
-    for (int h=0;h<6;h++)
-        for(int j=0;j<6;j++)
-            grid[h][j]=0;
+
 }

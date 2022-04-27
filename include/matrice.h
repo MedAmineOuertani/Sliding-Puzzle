@@ -24,6 +24,7 @@ class matrice
         int grid[6][6];
         void mousepressed(RenderWindow& window);
         void set_square();
+        bool check_win(Window& window);
 
 
     protected:
