@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "menu1.h"
+
 #include "menu2.h"
 #include "mainmenu.h"
 #include "matrice.h"
@@ -87,6 +87,25 @@ void run(){
                     }
                     if (m.check_win(window)){
                         window.close();
+                        RenderWindow window2(VideoMode(640,640),"You won!",Style::Close);
+                        Sprite sp;
+                        Texture t;
+                        t=m.img;
+                        sp.setTexture(t);
+                        while(window2.isOpen()){
+                            Event ev;
+                            while(window2.pollEvent(ev)){
+                                if(ev.type==Event::Closed){
+                                    window2.close();
+                                    break;
+
+                                }
+                            }
+                            window2.clear();
+                            window2.draw(sp);
+                            window2.display();
+                        }
+
                         break;
                     }
 
