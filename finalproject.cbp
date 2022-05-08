@@ -53,13 +53,11 @@
 		<Unit filename="cb.bmp" />
 		<Unit filename="include/mainmenu.h" />
 		<Unit filename="include/matrice.h" />
-		<Unit filename="include/menu1.h" />
 		<Unit filename="include/menu2.h" />
 		<Unit filename="include/square.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/mainmenu.cpp" />
 		<Unit filename="src/matrice.cpp" />
-		<Unit filename="src/menu1.cpp" />
 		<Unit filename="src/menu2.cpp" />
 		<Unit filename="src/square.cpp" />
 		<Extensions />
