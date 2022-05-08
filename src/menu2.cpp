@@ -17,7 +17,7 @@ menu2::menu2(float x,float y)
  menu[0].setOrigin(menu[0].getLocalBounds().width/2,menu[0].getLocalBounds().height/2);
  //Solutions
  menu[1].setColor(Color::White);
- menu[1].setString("Soltuions");
+ menu[1].setString("Solutions");
  menu[1].setCharacterSize(35);
  menu[1].setPosition(x,y+100);
  menu[1].setFont(font);
